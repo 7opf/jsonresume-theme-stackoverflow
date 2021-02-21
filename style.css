@@ -203,6 +203,10 @@ strong {
   margin-bottom: 0.6rem;
 }
 
+.section:last-child {
+  margin-bottom: 0;
+}
+
 section .location {
   margin-right: 0.5em;
   color: #606d76;
@@ -261,7 +265,7 @@ section .location {
 
 .main-summary {
   background: #f1f8ff;
-  padding: 1.2em 1em;
+  padding: 1em;
   margin-top: 1rem;
 }
 
@@ -573,6 +577,10 @@ section .location {
 
 .section > section > section {
   margin-bottom: 0.3rem;
+}
+
+.section > section > section:last-child {
+  margin-bottom: 0;
 }
 
 /******************
