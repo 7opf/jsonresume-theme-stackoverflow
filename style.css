@@ -655,7 +655,7 @@ section .location {
   }
   .header-left {
     float: left;
-    max-width: 70%;
+    max-width: 80%;
     word-break: normal;
   }
   .display {
