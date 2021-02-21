@@ -9,6 +9,7 @@ const { dateHelpers } = require(join(HELPERS, 'date-helpers.js'));
 const { paragraphSplit } = require(join(HELPERS, 'paragraph-split.js'));
 const { toLowerCase } = require(join(HELPERS, 'to-lower-case.js'));
 const { spaceToDash } = require(join(HELPERS, 'space-to-dash.js'));
+const { reflect } = require(join(HELPERS, 'reflect.js'));
 
 const { MY, Y, DMY } = dateHelpers;
 
@@ -19,6 +20,7 @@ Handlebars.registerHelper('toLowerCase', toLowerCase);
 Handlebars.registerHelper('MY', MY);
 Handlebars.registerHelper('Y', Y);
 Handlebars.registerHelper('DMY', DMY);
+Handlebars.registerHelper('reflect', reflect);
 
 function render(resume) {
   const css = readFileSync(`${__dirname}/style.css`, 'utf-8');
@@ -41,4 +43,12 @@ function render(resume) {
   });
 }
 
-module.exports = { render };
+const pdfRenderOptions = {
+  mediaType: 'screen',
+  margin: {
+    top: '0.45in',
+    bottom: '0.45in',
+  }
+};
+
+module.exports = { render, pdfRenderOptions };

@@ -20,6 +20,9 @@
         {{#if name}}
         <div class="position">{{name}}</div>
         {{/if}}
+        {{#if entity}}
+          <div class="company">{{entity}}</div>
+        {{/if}}
         {{#if startDate}}
         <div class="date">
           <span class="startDate">{{MY startDate}}</span>
@@ -34,18 +37,8 @@
       {{/if}}
       {{#location}}
       <span class="location">
-      <span class="fas fa-map-marker-alt"></span>
-      {{#if city}}
-      <span class="city">{{city}},</span>
-      {{/if}}
-      {{#if countryCode}}
-      <span class="countryCode">({{countryCode}})</span>
-      {{/if}}
-      {{#if region}}
-      <span class="region">
-      {{region}}
-      </span>
-      {{/if}}
+        <span class="fas fa-map-marker-alt"></span>
+        <span>{{this}}</span>
       </span>
       {{/location}}
       {{#if url}}
@@ -61,12 +54,12 @@
       </ul>
       {{/if}}
       <div class="item">
-        {{#if summary}}
-          <div class="summary">{{paragraphSplit summary}}</div>
+        {{#if description}}
+          <div class="summary">{{paragraphSplit description}}</div>
         {{/if}}
-        {{#if highlights.length}}
+        {{#if roles.length}}
         <ul class="highlights">
-          {{#each highlights}}
+          {{#each roles}}
             <li>{{paragraphSplit .}}</li>
           {{/each}}
         </ul>

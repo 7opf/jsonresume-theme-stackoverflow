@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-stackoverflow-FA5",
+  "name": "jsonresume-theme-stackoverflow",
   "version": "1.4.0",
   "description": "Stack Overflow theme for JSON Resume",
   "author": "Francesco Esposito <http://fran.cesco.io>",
@@ -7,10 +7,17 @@
     "type": "git",
     "url": "https://github.com/francescoes/jsonresume-theme-stackoverflow"
   },
+  "scripts": {
+    "serve": "resume serve -t ./index.js",
+    "pdf": "resume export -f pdf -t . ./public/resume.pdf"
+  },
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
     "handlebars": "^4.3.0",
     "moment": "^2.19.3"
+  },
+  "devDependencies": {
+    "resume-cli": "^3.0.4"
   }
 }

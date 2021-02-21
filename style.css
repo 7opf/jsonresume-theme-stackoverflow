@@ -168,15 +168,15 @@ li {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 h2 {
-  font-size: 1.67rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.27rem;
+  font-size: 1.15rem;
 }
 
 em {
@@ -254,7 +254,7 @@ section .location {
 }
 
 #header .image {
-  width: 11em;
+  width: 9em;
   float: right;
   border-radius: 4px;
 }
@@ -405,6 +405,10 @@ section .location {
 .gpa {
   clear: both;
   padding-bottom: 0.5em;
+}
+
+.publication-item .website {
+  display: block;
 }
 
 .fa.social {
@@ -594,27 +598,19 @@ section .location {
 
 @media screen and (min-width: 602px) {
   #resume {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
+  }
+  li {
+    margin-left: 1.5em;
   }
   .section header .date {
     float: right;
     font-weight: 600;
     color: #000;
   }
-}
-
-/****************
-*		LAPTOP
-****************/
-
-@media screen and (min-width: 1025px) {
-  li {
-    margin-left: 1.5em;
-  }
-  #resume {
-    width: 820px;
-    margin: 2rem auto;
+  .section header .location {
+    float: right;
   }
   .section > section > header .space-left {
     opacity: 1;
@@ -659,17 +655,25 @@ section .location {
   }
   .header-left {
     float: left;
-    width: 70%;
+    max-width: 70%;
     word-break: normal;
-  }
-  .section header .date {
-    padding: 0.2em;
   }
   .display {
     display: none;
   }
   .display:not(.none) {
     display: block;
+  }
+}
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
   }
 }
 
