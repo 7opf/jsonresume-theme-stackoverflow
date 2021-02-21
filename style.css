@@ -680,7 +680,6 @@ section .location {
 @media print {
   #resume {
     margin: 0.1em;
-    padding: 0.1em;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
     line-height: 1.25;
