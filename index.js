@@ -46,8 +46,8 @@ function render(resume) {
 const pdfRenderOptions = {
   mediaType: 'screen',
   margin: {
-    top: '0.45in',
-    bottom: '0.45in',
+    top: '0.4in',
+    bottom: '0.4in',
   }
 };
 

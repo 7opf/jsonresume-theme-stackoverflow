@@ -200,7 +200,7 @@ strong {
 /* every section wrapper */
 
 .section {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 section .location {
@@ -254,7 +254,7 @@ section .location {
 }
 
 #header .image {
-  width: 9em;
+  width: 8.4em;
   float: right;
   border-radius: 4px;
 }
@@ -390,11 +390,11 @@ section .location {
 }
 
 .highlights {
-  margin: 1em 0 0 0;
+  margin: 0.5em 0 0 0.5em;
 }
 
 .highlights > li > p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 .item {
@@ -502,7 +502,6 @@ section .location {
 #skills .item,
 #interests .item {
   width: 15em;
-  padding: 0 0.5em 0.5em 0;
   border-bottom: none;
 }
 
@@ -573,7 +572,7 @@ section .location {
 }
 
 .section > section > section {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 /******************
@@ -654,7 +653,7 @@ section .location {
   }
   .header-left {
     float: left;
-    max-width: 80%;
+    max-width: 87%;
     word-break: normal;
   }
   .display {
